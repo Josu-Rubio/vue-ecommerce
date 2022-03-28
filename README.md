@@ -1,4 +1,4 @@
-# front
+# Vue-ecommerce
 
 This is a project made as a testing code using VUE for a job offer for Decathlon
 
