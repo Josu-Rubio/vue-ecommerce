@@ -1,0 +1,124 @@
+.asideHeader {
+  display: flex;
+  font-weight: bold;
+  font-size: 1rem;
+  align-items: center;
+  background-color: #fff;
+  justify-content: start;
+  border: 1px solid rgba(75, 75, 75, 0.459);
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.asideHeader img {
+  width: 15%;
+  margin-right: 1rem;
+}
+
+.itemWrapper {
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid rgba(75, 75, 75, 0.459);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 80%;
+  margin-left: 1rem;
+}
+
+.itemPrice {
+  margin-left: -3rem;
+  position: absolute;
+  background-color: yellow;
+  padding: 0.5rem;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.itemBottom {
+  text-align: center;
+}
+
+aside {
+  flex: 1;
+  min-width: 15rem;
+  position: sticky;
+  margin: 1rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .asideHeader {
+    max-width: 15rem;
+  }
+
+  aside {
+    max-width: 90%;
+  }
+
+  .items {
+    max-width: 30vw;
+    font-display: row;
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .itemWrapper {
+    flex: 1;
+    width: 15rem;
+    height: 20rem;
+  }
+
+  main {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter {
+    margin: 1rem 0;
+  }
+
+  .buttonFilter {
+    margin: 1rem 0;
+    display: flex;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1024px) {
+  aside {
+    flex: 1;
+    min-width: 15rem;
+    position: sticky;
+    margin: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter {
+    margin: 0;
+  }
+
+  .buttonFilter {
+    margin: 1rem 0;
+    display: flex;
+    font-weight: bold;
+  }
+}

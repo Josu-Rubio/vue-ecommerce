@@ -1,0 +1,52 @@
+body {
+  font-family: Helvetica, Helvetica Neue, Roboto, Arial, Microsoft Yahei,
+    '\5FAE\8F6F\96C5\9ED1', SimSun, '\5B8B\4F53', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  border-bottom: 3px solid rgba(75, 75, 75, 0.459);
+  margin-bottom: 2rem;
+}
+.bodyWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftHeader img {
+  width: 30vw;
+}
+
+@media (min-width: 768px) {
+  .bodyWrapper {
+    align-items: start;
+    margin-left: 1rem;
+  }
+
+  header {
+    justify-content: start;
+  }
+
+  .leftHeader img {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bodyWrapper {
+    align-items: start;
+    margin-left: 1rem;
+    flex-direction: row;
+  }
+
+  .leftHeader img {
+    width: 10rem;
+  }
+}
